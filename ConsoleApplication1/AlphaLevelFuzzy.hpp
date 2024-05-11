@@ -23,7 +23,7 @@ public:
 
     AlphaLevelFuzzy operator+(const AlphaLevelFuzzy& other) const;
     void Stretch(double factor);
-    void Interpolate();
+    void Concentration();
 
     ~AlphaLevelFuzzy() {}
 };

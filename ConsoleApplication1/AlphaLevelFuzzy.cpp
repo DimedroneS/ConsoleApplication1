@@ -69,19 +69,17 @@ AlphaLevelFuzzy AlphaLevelFuzzy::operator+(const AlphaLevelFuzzy& other) const {
     return result;
 }
 
+void AlphaLevelFuzzy::Concentration() {
+    for (int i = 0; i < LN; ++i) {
+        level[i].lv = level[i].lv / 2;
+        level[i].rv = level[i].rv / 2;
+    }
+}
+
 void AlphaLevelFuzzy::Stretch(double factor) {
     for (int i = 0; i < LN; ++i) {
         level[i].lv *= factor;
         level[i].rv *= factor;
-    }
-}
-
-void AlphaLevelFuzzy::Interpolate() {
-    for (int i = 1; i < LN - 1; ++i) {
-        if (level[i].mf < level[i - 1].mf && level[i].mf < level[i + 1].mf) {
-            level[i].lv = (level[i - 1].lv + level[i + 1].lv) / 2;
-            level[i].rv = (level[i - 1].rv + level[i + 1].rv) / 2;
-        }
     }
 }
 

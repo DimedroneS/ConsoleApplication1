@@ -33,9 +33,9 @@ int main(int argc, char* argv[]) {
     std::cout << "Sum parabols" << std::endl;
     sum.print();
 
-    c.Stretch(2);
-    c.Interpolate();
-    std::cout << "Stretched parabola 1:" << std::endl;
+    double stretchFactor = 2.0; // Example stretch factor
+    c.Stretch(stretchFactor);
+    std::cout << "Stretched parabola c:" << std::endl;
     c.print();
 
 
