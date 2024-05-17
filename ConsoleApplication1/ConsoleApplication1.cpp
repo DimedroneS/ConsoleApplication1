@@ -1,43 +1,26 @@
-﻿#include "YourOp.hpp"
-#include "AlphaLevelFuzzy.hpp"
+﻿#include "AlphaLevelFuzzy.hpp"
 #include <iostream>
 
-int main(int argc, char* argv[]) {
+int main() {
+    double centerX = 2; // Средняя точка первой параболы
+    double spread = 1;  // Разброс первой параболы
 
-    AlphaLevelFuzzy a, b, c;
-    AlphaLevelFuzzy q, w, e;
-    YourOp testOp;
+    AlphaLevelFuzzy fuzzy;
+    std::cout << "1 parabola" << std::endl;
+    fuzzy.printParabolaPoints(centerX, spread);
 
-    // Adjust the parameters for the parabolic membership function
-    a.Parabola2AlphaLevel(1, 0, -2);
-    b.Parabola2AlphaLevel(1, 0, 2);
+    double centerX2 = 3; // Средняя точка второй параболы
+    double spread2 = 1;  // Разброс второй параболы
 
-    testOp.setOp1(a);
-    testOp.setOp2(b);
-    testOp.run();
-    c = testOp.getResult();
-    std::cout << "parabola 1:" << std::endl;
-    c.print();
+    std::cout << "2 parabola" << std::endl;
+    fuzzy.printParabolaPoints(centerX2, spread2);
 
-    q.Parabola2AlphaLevel2(-1, 0, 1);
-    w.Parabola2AlphaLevel2(-1, 0, -1);
+    std::cout << "SUM parabola" << std::endl;
+    fuzzy.printParabolaPlus(centerX, spread, centerX2, spread2);
 
-    testOp.setOp1(q);
-    testOp.setOp2(w);
-    testOp.run();
-    e = testOp.getResult();
-    std::cout << "parabola 2:" << std::endl;
-    e.print();
-
-    AlphaLevelFuzzy sum = c + e;
-    std::cout << "Sum parabols" << std::endl;
-    sum.print();
-
-    double stretchFactor = 2.0; // Example stretch factor
-    c.Stretch(stretchFactor);
-    std::cout << "Stretched parabola c:" << std::endl;
-    c.print();
-
+    double stretchFactor = 2; // Коэффициент растяжения
+    std::cout << "Rastyazh 1 parabola" << std::endl;
+    fuzzy.stretchParabolaPoints(centerX, spread, stretchFactor);
 
     return 0;
 }

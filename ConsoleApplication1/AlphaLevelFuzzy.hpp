@@ -1,12 +1,12 @@
 #ifndef AlphaLevelFuzzyH
 #define AlphaLevelFuzzyH
 
-#define LN 11 //Default number of levels
+#define LN 11 // Количество уровней альфа
 
 struct datum {
-    double mf; //Level of Memebership Function
-    double lv; //Left alpha level Value
-    double rv; //right alpha level Value
+    double mf; // Уровень принадлежности функции
+    double lv; // Левое значение уровня альфа
+    double rv; // Правое значение уровня альфа
 };
 
 class AlphaLevelFuzzy {
@@ -15,15 +15,13 @@ public:
 
     AlphaLevelFuzzy();
 
-    void Parabola2AlphaLevel(double a, double b, double c);
-    void Parabola2AlphaLevel2(double q, double w, double e);
-    void Trap2AlphaLevel(double lmin, double lmax, double rmax, double rmin);
-    void print();
-    double defuzzify();
+    double computeParabolaHeight(double x, double centerX, double spread);
 
-    AlphaLevelFuzzy operator+(const AlphaLevelFuzzy& other) const;
-    void Stretch(double factor);
-    void Concentration();
+    void printParabolaPoints(double centerX, double spread);
+
+    void printParabolaPlus(double centerX, double spread, double centerX2, double spread2);
+
+    void stretchParabolaPoints(double centerX, double spread, double stretchFactor);
 
     ~AlphaLevelFuzzy() {}
 };

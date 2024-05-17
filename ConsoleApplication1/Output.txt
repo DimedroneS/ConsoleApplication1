@@ -1,48 +1,48 @@
-parabola 1:
-Alpha Level 0: MF = 0, LV = 0, RV = 0
-Alpha Level 1: MF = 0.1, LV = -0.0707328, RV = 0.0707328
-Alpha Level 2: MF = 0.2, LV = -0.141599, RV = 0.141599
-Alpha Level 3: MF = 0.3, LV = -0.212735, RV = 0.212735
-Alpha Level 4: MF = 0.4, LV = -0.284282, RV = 0.284282
-Alpha Level 5: MF = 0.5, LV = -0.356394, RV = 0.356394
-Alpha Level 6: MF = 0.6, LV = -0.429236, RV = 0.429236
-Alpha Level 7: MF = 0.7, LV = -0.502992, RV = 0.502992
-Alpha Level 8: MF = 0.8, LV = -0.577875, RV = 0.577875
-Alpha Level 9: MF = 0.9, LV = -0.65413, RV = 0.65413
-Alpha Level 10: MF = 1, LV = -0.732051, RV = 0.732051
-parabola 2:
-Alpha Level 0: MF = 0, LV = 0, RV = 0
-Alpha Level 1: MF = 0.1, LV = -0.100126, RV = 0.100126
-Alpha Level 2: MF = 0.2, LV = -0.201018, RV = 0.201018
-Alpha Level 3: MF = 0.3, LV = -0.303515, RV = 0.303515
-Alpha Level 4: MF = 0.4, LV = -0.408619, RV = 0.408619
-Alpha Level 5: MF = 0.5, LV = -0.517638, RV = 0.517638
-Alpha Level 6: MF = 0.6, LV = -0.632456, RV = 0.632456
-Alpha Level 7: MF = 0.7, LV = -0.756118, RV = 0.756118
-Alpha Level 8: MF = 0.8, LV = -0.894427, RV = 0.894427
-Alpha Level 9: MF = 0.9, LV = -1.06218, RV = 1.06218
-Alpha Level 10: MF = 1, LV = -1.41421, RV = 1.41421
-Sum parabols
-Alpha Level 0: MF = 0, LV = 0, RV = 0
-Alpha Level 1: MF = 0.2, LV = -0.170859, RV = 0.170859
-Alpha Level 2: MF = 0.4, LV = -0.342617, RV = 0.342617
-Alpha Level 3: MF = 0.6, LV = -0.51625, RV = 0.51625
-Alpha Level 4: MF = 0.8, LV = -0.692901, RV = 0.692901
-Alpha Level 5: MF = 1, LV = -0.874032, RV = 0.874032
-Alpha Level 6: MF = 0.8, LV = -1.06169, RV = 1.06169
-Alpha Level 7: MF = 0.6, LV = -1.25911, RV = 1.25911
-Alpha Level 8: MF = 0.4, LV = -1.4723, RV = 1.4723
-Alpha Level 9: MF = 0.2, LV = -1.71631, RV = 1.71631
-Alpha Level 10: MF = 0, LV = -2.14626, RV = 2.14626
-Stretched parabola 1:
-Alpha Level 0: MF = 0, LV = 0, RV = 0
-Alpha Level 1: MF = 0.1, LV = -0.141466, RV = 0.141466
-Alpha Level 2: MF = 0.2, LV = -0.283198, RV = 0.283198
-Alpha Level 3: MF = 0.3, LV = -0.425469, RV = 0.425469
-Alpha Level 4: MF = 0.4, LV = -0.568565, RV = 0.568565
-Alpha Level 5: MF = 0.5, LV = -0.712788, RV = 0.712788
-Alpha Level 6: MF = 0.6, LV = -0.858471, RV = 0.858471
-Alpha Level 7: MF = 0.7, LV = -1.00598, RV = 1.00598
-Alpha Level 8: MF = 0.8, LV = -1.15575, RV = 1.15575
-Alpha Level 9: MF = 0.9, LV = -1.30826, RV = 1.30826
-Alpha Level 10: MF = 1, LV = -1.4641, RV = 1.4641
+1 parabola
+Alpha Level 0: Left Branch (1); Right Branch (3)
+Alpha Level 0.1: Left Branch (1.05132); Right Branch (2.94868)
+Alpha Level 0.2: Left Branch (1.10557); Right Branch (2.89443)
+Alpha Level 0.3: Left Branch (1.16334); Right Branch (2.83666)
+Alpha Level 0.4: Left Branch (1.2254); Right Branch (2.7746)
+Alpha Level 0.5: Left Branch (1.29289); Right Branch (2.70711)
+Alpha Level 0.6: Left Branch (1.36754); Right Branch (2.63246)
+Alpha Level 0.7: Left Branch (1.45228); Right Branch (2.54772)
+Alpha Level 0.8: Left Branch (1.55279); Right Branch (2.44721)
+Alpha Level 0.9: Left Branch (1.68377); Right Branch (2.31623)
+Alpha Level 1: Left Branch (2); Right Branch (2)
+2 parabola
+Alpha Level 0: Left Branch (2); Right Branch (4)
+Alpha Level 0.1: Left Branch (2.05132); Right Branch (3.94868)
+Alpha Level 0.2: Left Branch (2.10557); Right Branch (3.89443)
+Alpha Level 0.3: Left Branch (2.16334); Right Branch (3.83666)
+Alpha Level 0.4: Left Branch (2.2254); Right Branch (3.7746)
+Alpha Level 0.5: Left Branch (2.29289); Right Branch (3.70711)
+Alpha Level 0.6: Left Branch (2.36754); Right Branch (3.63246)
+Alpha Level 0.7: Left Branch (2.45228); Right Branch (3.54772)
+Alpha Level 0.8: Left Branch (2.55279); Right Branch (3.44721)
+Alpha Level 0.9: Left Branch (2.68377); Right Branch (3.31623)
+Alpha Level 1: Left Branch (3); Right Branch (3)
+SUM parabola
+Alpha Level 0: Left Branch (3); Right Branch (7)
+Alpha Level 0.1: Left Branch (3.10263); Right Branch (6.89737)
+Alpha Level 0.2: Left Branch (3.21115); Right Branch (6.78885)
+Alpha Level 0.3: Left Branch (3.32668); Right Branch (6.67332)
+Alpha Level 0.4: Left Branch (3.45081); Right Branch (6.54919)
+Alpha Level 0.5: Left Branch (3.58579); Right Branch (6.41421)
+Alpha Level 0.6: Left Branch (3.73509); Right Branch (6.26491)
+Alpha Level 0.7: Left Branch (3.90455); Right Branch (6.09545)
+Alpha Level 0.8: Left Branch (4.10557); Right Branch (5.89443)
+Alpha Level 0.9: Left Branch (4.36754); Right Branch (5.63246)
+Alpha Level 1: Left Branch (5); Right Branch (5)
+Rastyazh 1 parabola
+Alpha Level 0: Left Branch (0); Right Branch (4)
+Alpha Level 0.1: Left Branch (0.102633); Right Branch (3.89737)
+Alpha Level 0.2: Left Branch (0.211146); Right Branch (3.78885)
+Alpha Level 0.3: Left Branch (0.32668); Right Branch (3.67332)
+Alpha Level 0.4: Left Branch (0.450807); Right Branch (3.54919)
+Alpha Level 0.5: Left Branch (0.585786); Right Branch (3.41421)
+Alpha Level 0.6: Left Branch (0.735089); Right Branch (3.26491)
+Alpha Level 0.7: Left Branch (0.904555); Right Branch (3.09545)
+Alpha Level 0.8: Left Branch (1.10557); Right Branch (2.89443)
+Alpha Level 0.9: Left Branch (1.36754); Right Branch (2.63246)
+Alpha Level 1: Left Branch (2); Right Branch (2)
