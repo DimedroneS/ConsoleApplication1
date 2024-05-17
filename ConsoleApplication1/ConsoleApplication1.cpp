@@ -19,8 +19,10 @@ int main() {
     fuzzy.printParabolaPlus(centerX, spread, centerX2, spread2);
 
     double stretchFactor = 2; // Коэффициент растяжения
-    std::cout << "Rastyazh 1 parabola" << std::endl;
+    std::cout << "1 Rastyazh 1 parabola" << std::endl;
     fuzzy.stretchParabolaPoints(centerX, spread, stretchFactor);
+    std::cout << "2 Rastyazh 1 parabola" << std::endl;
+    fuzzy.stretchParabolaPoints2(centerX, spread, stretchFactor);
     std::cin.get();
     return 0;
 }

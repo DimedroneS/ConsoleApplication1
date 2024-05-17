@@ -22,6 +22,7 @@ public:
     void printParabolaPlus(double centerX, double spread, double centerX2, double spread2);
 
     void stretchParabolaPoints(double centerX, double spread, double stretchFactor);
+    void stretchParabolaPoints2(double centerX, double spread, double stretchFactor);
 
     ~AlphaLevelFuzzy() {}
 };

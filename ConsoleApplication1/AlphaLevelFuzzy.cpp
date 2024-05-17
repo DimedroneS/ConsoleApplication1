@@ -66,6 +66,27 @@ void AlphaLevelFuzzy::stretchParabolaPoints(double centerX, double spread, doubl
     }
 }
 
+void AlphaLevelFuzzy::stretchParabolaPoints2(double centerX, double spread, double stretchFactor) {
+
+    for (int alphaIndex = 0; alphaIndex < LN; ++alphaIndex) {
+        double alpha = static_cast<double>(alphaIndex) / (LN - 1);
+        // Левая ветвь параболы
+        double leftX = (centerX - spread * sqrt(1.0 - alpha)) * stretchFactor;
+        double leftY = computeParabolaHeight(leftX, centerX, spread);
+
+        // Правая ветвь параболы
+        double rightX = (centerX + spread * sqrt(1.0 - alpha)) * stretchFactor;
+        double rightY = computeParabolaHeight(rightX, centerX, spread);
+
+        // Выводим результат
+        std::cout << "Alpha Level " << alpha << ": ";
+        std::cout << "Left Branch (" << leftX << "); ";
+        std::cout << "Right Branch (" << rightX << ")" << std::endl;
+    }
+}
+
+
+
 
 
 
