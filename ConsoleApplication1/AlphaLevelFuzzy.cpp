@@ -10,9 +10,9 @@ double AlphaLevelFuzzy::computeParabolaHeight(double x, double centerX, double s
 }
 
 void AlphaLevelFuzzy::printParabolaPoints(double centerX, double spread) {
-    // Выводим точки на разных уровнях альфа
+
     for (int alphaIndex = 0; alphaIndex < LN; ++alphaIndex) {
-        double alpha = static_cast<double>(alphaIndex) / (LN - 1); // Преобразование в диапазон [0, 1]
+        double alpha = static_cast<double>(alphaIndex) / (LN - 1); //диапазон 0-1
         // Левая ветвь параболы
         double leftX = centerX - spread * sqrt(1.0 - alpha);
         double leftY = computeParabolaHeight(leftX, centerX, spread);
@@ -29,16 +29,16 @@ void AlphaLevelFuzzy::printParabolaPoints(double centerX, double spread) {
 }
 
 void AlphaLevelFuzzy::printParabolaPlus(double centerX, double spread, double centerX2, double spread2) {
-    // Выводим точки на разных уровнях альфа
+
     for (int alphaIndex = 0; alphaIndex < LN; ++alphaIndex) {
-        double alpha = static_cast<double>(alphaIndex) / (LN - 1); // Преобразование в диапазон [0, 1]
+        double alpha = static_cast<double>(alphaIndex) / (LN - 1); //диапазон 0-1
         // Левая ветвь параболы
         double leftX = centerX - spread * sqrt(1.0 - alpha) + centerX2 - spread2 * sqrt(1.0 - alpha);
-        double leftY = computeParabolaHeight(leftX, centerX, spread); // Используем параметры первой параболы
+        double leftY = computeParabolaHeight(leftX, centerX, spread);
 
         // Правая ветвь параболы
         double rightX = centerX + spread * sqrt(1.0 - alpha) + centerX2 + spread2 * sqrt(1.0 - alpha);
-        double rightY = computeParabolaHeight(rightX, centerX, spread); // Используем параметры первой параболы
+        double rightY = computeParabolaHeight(rightX, centerX, spread); 
 
         // Выводим результат
         std::cout << "Alpha Level " << alpha << ": ";
@@ -48,9 +48,9 @@ void AlphaLevelFuzzy::printParabolaPlus(double centerX, double spread, double ce
 }
 
 void AlphaLevelFuzzy::stretchParabolaPoints(double centerX, double spread, double stretchFactor) {
-    // Выводим растянутые точки на разных уровнях альфа
+
     for (int alphaIndex = 0; alphaIndex < LN; ++alphaIndex) {
-        double alpha = static_cast<double>(alphaIndex) / (LN - 1); // Преобразование в диапазон [0, 1]
+        double alpha = static_cast<double>(alphaIndex) / (LN - 1);
         // Левая ветвь параболы
         double leftX = centerX - spread * sqrt(1.0 - alpha) * stretchFactor;
         double leftY = computeParabolaHeight(leftX, centerX, spread);

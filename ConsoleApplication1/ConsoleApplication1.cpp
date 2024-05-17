@@ -21,6 +21,6 @@ int main() {
     double stretchFactor = 2; // Коэффициент растяжения
     std::cout << "Rastyazh 1 parabola" << std::endl;
     fuzzy.stretchParabolaPoints(centerX, spread, stretchFactor);
-
+    std::cin.get();
     return 0;
 }
